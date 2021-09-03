@@ -16,13 +16,13 @@ describe("Testes para o Caixa eletrônico Recursivo", () => {
 
   it("Para saque de R$30,00 deve retornar 1 nota de R$10,00 1 nota de R$20,00.", () => {
     expect(withdraw(30)).toEqual(
-      "Entregar 1 nota de R$10,00 1 nota de R$20,00."
+      "Entregar 1 nota de R$10,00, 1 nota de R$20,00."
     );
   });
 
-  it("Para saque de R$80,00 deve retornar 1 nota de R$10,00 1 nota de R$20,00.", () => {
+  it("Para saque de R$80,00 deve retornar 1 nota de R$10,00, 1 nota de R$20,00, 1 nota de R$50,00.", () => {
     expect(withdraw(80)).toEqual(
-      "Entregar 1 nota de R$10,00 1 nota de R$20,00 1 nota de R$50,00."
+      "Entregar 1 nota de R$10,00, 1 nota de R$20,00, 1 nota de R$50,00."
     );
   });
 
